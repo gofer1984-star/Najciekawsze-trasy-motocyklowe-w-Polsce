@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c822d513ab5aa4e677c40eac6b9c03f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c822d513ab5aa4e677c40eac6b9c03f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c822d513ab5aa4e677c40eac6b9c03f1 = L.map(
+                "map_c822d513ab5aa4e677c40eac6b9c03f1",
+                {
+                    center: [52.1, 19.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d22bbbb50948a45c2680eb9d5221edfb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var marker_8654bd6db0c7f3dde625f1f6700f242d = L.marker(
+                [50.442, 16.25],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_237264f0e5d6c43be6bdccba12499920 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e1\u003c/div\u003e"});
+            marker_8654bd6db0c7f3dde625f1f6700f242d.setIcon(div_icon_237264f0e5d6c43be6bdccba12499920);
+        
+    
+        var popup_a0200d8fa9df45893ae87c7e027b4ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29f882c602a5bf48bffd764718a7697b = $(`<div id="html_29f882c602a5bf48bffd764718a7697b" style="width: 100.0%; height: 100.0%;">1. Droga Stu Zakrętów - start</div>`)[0];
+            popup_a0200d8fa9df45893ae87c7e027b4ad6.setContent(html_29f882c602a5bf48bffd764718a7697b);
+        
+
+        marker_8654bd6db0c7f3dde625f1f6700f242d.bindPopup(popup_a0200d8fa9df45893ae87c7e027b4ad6)
+        ;
+
+        
+    
+    
+            var marker_d381ef263b62fe13fc2198c488171acc = L.marker(
+                [50.503, 16.37],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_7d2b8aa3fba0e855889f2395bccf80f2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e1\u003c/div\u003e"});
+            marker_d381ef263b62fe13fc2198c488171acc.setIcon(div_icon_7d2b8aa3fba0e855889f2395bccf80f2);
+        
+    
+        var popup_908b58eb0b41e5889370254b0a284967 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_381b8538b3db38d79c7e60916735a411 = $(`<div id="html_381b8538b3db38d79c7e60916735a411" style="width: 100.0%; height: 100.0%;">1. Droga Stu Zakrętów - koniec</div>`)[0];
+            popup_908b58eb0b41e5889370254b0a284967.setContent(html_381b8538b3db38d79c7e60916735a411);
+        
+
+        marker_d381ef263b62fe13fc2198c488171acc.bindPopup(popup_908b58eb0b41e5889370254b0a284967)
+        ;
+
+        
+    
+    
+            var poly_line_b49393f6729a358c8afe1fb978791546 = L.polyline(
+                [[50.442, 16.25], [50.503, 16.37]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_b49393f6729a358c8afe1fb978791546.bindTooltip(
+                `<div>
+                     1. Droga Stu Zakrętów
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bee131e9c41fa536de9079d645124772 = L.marker(
+                [49.55, 22.33],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_b7f8520d204bdfdc824d8770a00ca050 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e2\u003c/div\u003e"});
+            marker_bee131e9c41fa536de9079d645124772.setIcon(div_icon_b7f8520d204bdfdc824d8770a00ca050);
+        
+    
+        var popup_4e3c6260d09c003874530068079cf75a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32926dc68212fa4435859f0d0084b958 = $(`<div id="html_32926dc68212fa4435859f0d0084b958" style="width: 100.0%; height: 100.0%;">2. Przełęcz Przysłup - start</div>`)[0];
+            popup_4e3c6260d09c003874530068079cf75a.setContent(html_32926dc68212fa4435859f0d0084b958);
+        
+
+        marker_bee131e9c41fa536de9079d645124772.bindPopup(popup_4e3c6260d09c003874530068079cf75a)
+        ;
+
+        
+    
+    
+            var marker_b7e0468cd840bc0edcc688f519061cf6 = L.marker(
+                [49.58, 22.4],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_073361e9b076dcf940e6e144feeaebd1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e2\u003c/div\u003e"});
+            marker_b7e0468cd840bc0edcc688f519061cf6.setIcon(div_icon_073361e9b076dcf940e6e144feeaebd1);
+        
+    
+        var popup_4fb9ca82c6e9c44cd38631c0d146ff31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c45974df52c7ddcf85ff104e17ca1775 = $(`<div id="html_c45974df52c7ddcf85ff104e17ca1775" style="width: 100.0%; height: 100.0%;">2. Przełęcz Przysłup - koniec</div>`)[0];
+            popup_4fb9ca82c6e9c44cd38631c0d146ff31.setContent(html_c45974df52c7ddcf85ff104e17ca1775);
+        
+
+        marker_b7e0468cd840bc0edcc688f519061cf6.bindPopup(popup_4fb9ca82c6e9c44cd38631c0d146ff31)
+        ;
+
+        
+    
+    
+            var poly_line_e1ede739e51eb4e3c021e84dbe64f0c5 = L.polyline(
+                [[49.55, 22.33], [49.58, 22.4]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_e1ede739e51eb4e3c021e84dbe64f0c5.bindTooltip(
+                `<div>
+                     2. Przełęcz Przysłup
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa725fcdebd2bfce3134cdd1f6886cec = L.marker(
+                [49.65, 19.0],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_014f746d189a60c2234f36a3eb2844e1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e3\u003c/div\u003e"});
+            marker_aa725fcdebd2bfce3134cdd1f6886cec.setIcon(div_icon_014f746d189a60c2234f36a3eb2844e1);
+        
+    
+        var popup_cea0be121e34c65a3cc45e4561df5eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3419ebf29410dd77839b7326190669c8 = $(`<div id="html_3419ebf29410dd77839b7326190669c8" style="width: 100.0%; height: 100.0%;">3. Przełęcz Salmopolska & Kubalonka - start</div>`)[0];
+            popup_cea0be121e34c65a3cc45e4561df5eb8.setContent(html_3419ebf29410dd77839b7326190669c8);
+        
+
+        marker_aa725fcdebd2bfce3134cdd1f6886cec.bindPopup(popup_cea0be121e34c65a3cc45e4561df5eb8)
+        ;
+
+        
+    
+    
+            var marker_2f44e3aca8c69f4445cea78e8ecef6ff = L.marker(
+                [49.63, 18.94],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_c97200cc68de281b2502124870386fa0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e3\u003c/div\u003e"});
+            marker_2f44e3aca8c69f4445cea78e8ecef6ff.setIcon(div_icon_c97200cc68de281b2502124870386fa0);
+        
+    
+        var popup_e8f1b2a17c60cd398fb219effa5b14df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bdc8325932dca2f95afce0e4d1194a2 = $(`<div id="html_1bdc8325932dca2f95afce0e4d1194a2" style="width: 100.0%; height: 100.0%;">3. Przełęcz Salmopolska & Kubalonka - koniec</div>`)[0];
+            popup_e8f1b2a17c60cd398fb219effa5b14df.setContent(html_1bdc8325932dca2f95afce0e4d1194a2);
+        
+
+        marker_2f44e3aca8c69f4445cea78e8ecef6ff.bindPopup(popup_e8f1b2a17c60cd398fb219effa5b14df)
+        ;
+
+        
+    
+    
+            var poly_line_b14ecd2855657565c5ba900727c1f38f = L.polyline(
+                [[49.65, 19.0], [49.63, 18.94]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_b14ecd2855657565c5ba900727c1f38f.bindTooltip(
+                `<div>
+                     3. Przełęcz Salmopolska & Kubalonka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25d36127fbca84d737a4b683d5f6e360 = L.marker(
+                [50.77, 19.27],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_5cf7a913e20593e47407c8caf8574309 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e4\u003c/div\u003e"});
+            marker_25d36127fbca84d737a4b683d5f6e360.setIcon(div_icon_5cf7a913e20593e47407c8caf8574309);
+        
+    
+        var popup_d0fea3041067153ef0d6420373fd20c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_449ec41612c7104ef76f619d313faa96 = $(`<div id="html_449ec41612c7104ef76f619d313faa96" style="width: 100.0%; height: 100.0%;">4. Szlak Orlich Gniazd - start</div>`)[0];
+            popup_d0fea3041067153ef0d6420373fd20c7.setContent(html_449ec41612c7104ef76f619d313faa96);
+        
+
+        marker_25d36127fbca84d737a4b683d5f6e360.bindPopup(popup_d0fea3041067153ef0d6420373fd20c7)
+        ;
+
+        
+    
+    
+            var marker_d713afb3fdc6cbf0db3f8f27597dded3 = L.marker(
+                [50.06, 19.94],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_7f513da4ca4b3cd8d4f691d2bd194dc9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e4\u003c/div\u003e"});
+            marker_d713afb3fdc6cbf0db3f8f27597dded3.setIcon(div_icon_7f513da4ca4b3cd8d4f691d2bd194dc9);
+        
+    
+        var popup_16226570a8f973c48908eba60f6a4ea3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91f6472f75c111ad8a47acee4a84fe83 = $(`<div id="html_91f6472f75c111ad8a47acee4a84fe83" style="width: 100.0%; height: 100.0%;">4. Szlak Orlich Gniazd - koniec</div>`)[0];
+            popup_16226570a8f973c48908eba60f6a4ea3.setContent(html_91f6472f75c111ad8a47acee4a84fe83);
+        
+
+        marker_d713afb3fdc6cbf0db3f8f27597dded3.bindPopup(popup_16226570a8f973c48908eba60f6a4ea3)
+        ;
+
+        
+    
+    
+            var poly_line_64de760ebd464629a4816ccc59ab3e9e = L.polyline(
+                [[50.77, 19.27], [50.06, 19.94]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_64de760ebd464629a4816ccc59ab3e9e.bindTooltip(
+                `<div>
+                     4. Szlak Orlich Gniazd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3a6efa56f1596f1dbfe31710a58a3f4 = L.marker(
+                [49.45, 22.33],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_4319a0f16c6d40168c97ce540bc14196 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e5\u003c/div\u003e"});
+            marker_a3a6efa56f1596f1dbfe31710a58a3f4.setIcon(div_icon_4319a0f16c6d40168c97ce540bc14196);
+        
+    
+        var popup_da918eba2e6d6a4eabe1dbbf00efb8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a7900167f60b70a570b181479c72b8a = $(`<div id="html_1a7900167f60b70a570b181479c72b8a" style="width: 100.0%; height: 100.0%;">5. Wielka Pętla Bieszczadzka - start</div>`)[0];
+            popup_da918eba2e6d6a4eabe1dbbf00efb8d2.setContent(html_1a7900167f60b70a570b181479c72b8a);
+        
+
+        marker_a3a6efa56f1596f1dbfe31710a58a3f4.bindPopup(popup_da918eba2e6d6a4eabe1dbbf00efb8d2)
+        ;
+
+        
+    
+    
+            var marker_784dd229bd78d459aecf1042328b8471 = L.marker(
+                [49.28, 22.7],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_507a516398dafb973d62782c4ffaea42 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e5\u003c/div\u003e"});
+            marker_784dd229bd78d459aecf1042328b8471.setIcon(div_icon_507a516398dafb973d62782c4ffaea42);
+        
+    
+        var popup_35357d6beae19531aeceba2a9bbc2bda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_586d0f6c9fff59cf79ae7c924edc94ca = $(`<div id="html_586d0f6c9fff59cf79ae7c924edc94ca" style="width: 100.0%; height: 100.0%;">5. Wielka Pętla Bieszczadzka - koniec</div>`)[0];
+            popup_35357d6beae19531aeceba2a9bbc2bda.setContent(html_586d0f6c9fff59cf79ae7c924edc94ca);
+        
+
+        marker_784dd229bd78d459aecf1042328b8471.bindPopup(popup_35357d6beae19531aeceba2a9bbc2bda)
+        ;
+
+        
+    
+    
+            var poly_line_cdb5afb2b2ffded9189d7a9d1a4cf9ac = L.polyline(
+                [[49.45, 22.33], [49.28, 22.7]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_cdb5afb2b2ffded9189d7a9d1a4cf9ac.bindTooltip(
+                `<div>
+                     5. Wielka Pętla Bieszczadzka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb2d8b7594f37439505c6c18969dee7a = L.marker(
+                [50.77, 16.28],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_6b52e27606146593043d098b31cfd03f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e6\u003c/div\u003e"});
+            marker_bb2d8b7594f37439505c6c18969dee7a.setIcon(div_icon_6b52e27606146593043d098b31cfd03f);
+        
+    
+        var popup_68d9dfbdb515f2c0f7e77b5e6ec6ccfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f12687d6ca906afbdb50b84ce9a4f558 = $(`<div id="html_f12687d6ca906afbdb50b84ce9a4f558" style="width: 100.0%; height: 100.0%;">6. Droga Sudecka - start</div>`)[0];
+            popup_68d9dfbdb515f2c0f7e77b5e6ec6ccfd.setContent(html_f12687d6ca906afbdb50b84ce9a4f558);
+        
+
+        marker_bb2d8b7594f37439505c6c18969dee7a.bindPopup(popup_68d9dfbdb515f2c0f7e77b5e6ec6ccfd)
+        ;
+
+        
+    
+    
+            var marker_3e98531c147988691774202061c861c8 = L.marker(
+                [50.42, 16.64],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_146dfcac0b7f94678dbce474ee087082 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e6\u003c/div\u003e"});
+            marker_3e98531c147988691774202061c861c8.setIcon(div_icon_146dfcac0b7f94678dbce474ee087082);
+        
+    
+        var popup_b348feffadfc3c82985bcc2a151ce393 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f041f49756415ed883252b1ac88c1e7a = $(`<div id="html_f041f49756415ed883252b1ac88c1e7a" style="width: 100.0%; height: 100.0%;">6. Droga Sudecka - koniec</div>`)[0];
+            popup_b348feffadfc3c82985bcc2a151ce393.setContent(html_f041f49756415ed883252b1ac88c1e7a);
+        
+
+        marker_3e98531c147988691774202061c861c8.bindPopup(popup_b348feffadfc3c82985bcc2a151ce393)
+        ;
+
+        
+    
+    
+            var poly_line_32ec1ad932603f57cf99cb5b910268b3 = L.polyline(
+                [[50.77, 16.28], [50.42, 16.64]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_32ec1ad932603f57cf99cb5b910268b3.bindTooltip(
+                `<div>
+                     6. Droga Sudecka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d065e418f315075f0b870457f802f87 = L.marker(
+                [49.3, 19.95],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_398168ef2dc7c2745c28295bbc636eba = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e7\u003c/div\u003e"});
+            marker_5d065e418f315075f0b870457f802f87.setIcon(div_icon_398168ef2dc7c2745c28295bbc636eba);
+        
+    
+        var popup_5f3f153aa90ca9d0114e8891fcf75607 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ff9b641f17c0d3be77d67c1ae1a0324 = $(`<div id="html_5ff9b641f17c0d3be77d67c1ae1a0324" style="width: 100.0%; height: 100.0%;">7. Droga Balzera (Tatry) - start</div>`)[0];
+            popup_5f3f153aa90ca9d0114e8891fcf75607.setContent(html_5ff9b641f17c0d3be77d67c1ae1a0324);
+        
+
+        marker_5d065e418f315075f0b870457f802f87.bindPopup(popup_5f3f153aa90ca9d0114e8891fcf75607)
+        ;
+
+        
+    
+    
+            var marker_b0d19e7f9a5df8b5b389739791a0824a = L.marker(
+                [49.25, 20.1],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_5878a835ca19c7f416964ac8f403473a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e7\u003c/div\u003e"});
+            marker_b0d19e7f9a5df8b5b389739791a0824a.setIcon(div_icon_5878a835ca19c7f416964ac8f403473a);
+        
+    
+        var popup_0518fbf02f98753bcd26fe7eb7becb88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf871e9af932856cc31dc23580a48fd8 = $(`<div id="html_bf871e9af932856cc31dc23580a48fd8" style="width: 100.0%; height: 100.0%;">7. Droga Balzera (Tatry) - koniec</div>`)[0];
+            popup_0518fbf02f98753bcd26fe7eb7becb88.setContent(html_bf871e9af932856cc31dc23580a48fd8);
+        
+
+        marker_b0d19e7f9a5df8b5b389739791a0824a.bindPopup(popup_0518fbf02f98753bcd26fe7eb7becb88)
+        ;
+
+        
+    
+    
+            var poly_line_4d51a3545ca5753568873416305abaf6 = L.polyline(
+                [[49.3, 19.95], [49.25, 20.1]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_4d51a3545ca5753568873416305abaf6.bindTooltip(
+                `<div>
+                     7. Droga Balzera (Tatry)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3b036fb2c66a4f383f847cd96774fd4 = L.marker(
+                [50.72, 23.25],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_63f01fe2fc123a7f0b676aa09887ca9c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e8\u003c/div\u003e"});
+            marker_b3b036fb2c66a4f383f847cd96774fd4.setIcon(div_icon_63f01fe2fc123a7f0b676aa09887ca9c);
+        
+    
+        var popup_fd335c98cf2f2f38eeb025d69dcec44c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fcce211ff22f74fa2a9f3e6fed993db = $(`<div id="html_9fcce211ff22f74fa2a9f3e6fed993db" style="width: 100.0%; height: 100.0%;">8. Roztoczańska Pętla - start</div>`)[0];
+            popup_fd335c98cf2f2f38eeb025d69dcec44c.setContent(html_9fcce211ff22f74fa2a9f3e6fed993db);
+        
+
+        marker_b3b036fb2c66a4f383f847cd96774fd4.bindPopup(popup_fd335c98cf2f2f38eeb025d69dcec44c)
+        ;
+
+        
+    
+    
+            var marker_5f99db1170727d755941ed82bd4d7dd3 = L.marker(
+                [50.55, 23.05],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_f9e4890274c850264e92c45bab265792 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e8\u003c/div\u003e"});
+            marker_5f99db1170727d755941ed82bd4d7dd3.setIcon(div_icon_f9e4890274c850264e92c45bab265792);
+        
+    
+        var popup_41f4fbd7ffb98385b6136de1c62e9640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf082e6bef30ddbcaed7321c9246ad70 = $(`<div id="html_cf082e6bef30ddbcaed7321c9246ad70" style="width: 100.0%; height: 100.0%;">8. Roztoczańska Pętla - koniec</div>`)[0];
+            popup_41f4fbd7ffb98385b6136de1c62e9640.setContent(html_cf082e6bef30ddbcaed7321c9246ad70);
+        
+
+        marker_5f99db1170727d755941ed82bd4d7dd3.bindPopup(popup_41f4fbd7ffb98385b6136de1c62e9640)
+        ;
+
+        
+    
+    
+            var poly_line_dc7193efb9fa816d82a3a34aba0fc0ab = L.polyline(
+                [[50.72, 23.25], [50.55, 23.05]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_dc7193efb9fa816d82a3a34aba0fc0ab.bindTooltip(
+                `<div>
+                     8. Roztoczańska Pętla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc39e16d7c6f2354f5b855acbc7f8b94 = L.marker(
+                [53.58, 20.28],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_ab27439b2d64ba2a41e808aeab8a7812 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e9\u003c/div\u003e"});
+            marker_bc39e16d7c6f2354f5b855acbc7f8b94.setIcon(div_icon_ab27439b2d64ba2a41e808aeab8a7812);
+        
+    
+        var popup_6e55677108099e205a487ab301a58e7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5734bf6ac53971b906b4fa1c89f5da5b = $(`<div id="html_5734bf6ac53971b906b4fa1c89f5da5b" style="width: 100.0%; height: 100.0%;">9. Warmia–Mazury (Olsztynek–Pisz) - start</div>`)[0];
+            popup_6e55677108099e205a487ab301a58e7a.setContent(html_5734bf6ac53971b906b4fa1c89f5da5b);
+        
+
+        marker_bc39e16d7c6f2354f5b855acbc7f8b94.bindPopup(popup_6e55677108099e205a487ab301a58e7a)
+        ;
+
+        
+    
+    
+            var marker_c28873b244a7e31931c7150414203d50 = L.marker(
+                [53.63, 21.81],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_a929472643008eebefe39e9d1c94061e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e9\u003c/div\u003e"});
+            marker_c28873b244a7e31931c7150414203d50.setIcon(div_icon_a929472643008eebefe39e9d1c94061e);
+        
+    
+        var popup_2e5a935333225c97d488817a41c57a89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8219915fdd7b3b15b642b349b33c8d28 = $(`<div id="html_8219915fdd7b3b15b642b349b33c8d28" style="width: 100.0%; height: 100.0%;">9. Warmia–Mazury (Olsztynek–Pisz) - koniec</div>`)[0];
+            popup_2e5a935333225c97d488817a41c57a89.setContent(html_8219915fdd7b3b15b642b349b33c8d28);
+        
+
+        marker_c28873b244a7e31931c7150414203d50.bindPopup(popup_2e5a935333225c97d488817a41c57a89)
+        ;
+
+        
+    
+    
+            var poly_line_1e5d4753ec25264b9c2eb82b8e371324 = L.polyline(
+                [[53.58, 20.28], [53.63, 21.81]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_1e5d4753ec25264b9c2eb82b8e371324.bindTooltip(
+                `<div>
+                     9. Warmia–Mazury (Olsztynek–Pisz)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4449062f50ca47f8fa11228af3da982 = L.marker(
+                [53.91, 14.25],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_31eaa2f1411ca81f40a0c4fc53d97449 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e10\u003c/div\u003e"});
+            marker_e4449062f50ca47f8fa11228af3da982.setIcon(div_icon_31eaa2f1411ca81f40a0c4fc53d97449);
+        
+    
+        var popup_2b7e915109b2b9d08bc3eaca32573c4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba6c931aac3d04a96d7a4e548d0466e8 = $(`<div id="html_ba6c931aac3d04a96d7a4e548d0466e8" style="width: 100.0%; height: 100.0%;">10. Nadmorska (Świnoujście–Hel) - start</div>`)[0];
+            popup_2b7e915109b2b9d08bc3eaca32573c4c.setContent(html_ba6c931aac3d04a96d7a4e548d0466e8);
+        
+
+        marker_e4449062f50ca47f8fa11228af3da982.bindPopup(popup_2b7e915109b2b9d08bc3eaca32573c4c)
+        ;
+
+        
+    
+    
+            var marker_0f78a1da9c02a68ad9c75e2e23f55b07 = L.marker(
+                [54.61, 18.81],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_6d3fed4a7e6b499ff6d2bd59c988f2ea = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e10\u003c/div\u003e"});
+            marker_0f78a1da9c02a68ad9c75e2e23f55b07.setIcon(div_icon_6d3fed4a7e6b499ff6d2bd59c988f2ea);
+        
+    
+        var popup_42ce571386fd9c8bada34a069811fa1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_258e96c5e6d827b00a85be4c1888aa3e = $(`<div id="html_258e96c5e6d827b00a85be4c1888aa3e" style="width: 100.0%; height: 100.0%;">10. Nadmorska (Świnoujście–Hel) - koniec</div>`)[0];
+            popup_42ce571386fd9c8bada34a069811fa1e.setContent(html_258e96c5e6d827b00a85be4c1888aa3e);
+        
+
+        marker_0f78a1da9c02a68ad9c75e2e23f55b07.bindPopup(popup_42ce571386fd9c8bada34a069811fa1e)
+        ;
+
+        
+    
+    
+            var poly_line_8ce5c8483943fb147fc636fd9c1e3512 = L.polyline(
+                [[53.91, 14.25], [54.61, 18.81]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_8ce5c8483943fb147fc636fd9c1e3512.bindTooltip(
+                `<div>
+                     10. Nadmorska (Świnoujście–Hel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_265b48d82bba2bb06a62d6c3a9af3e44 = L.marker(
+                [53.33, 22.58],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_29269bdc354b787ea28bcefe6d98ca5c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:green;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e11\u003c/div\u003e"});
+            marker_265b48d82bba2bb06a62d6c3a9af3e44.setIcon(div_icon_29269bdc354b787ea28bcefe6d98ca5c);
+        
+    
+        var popup_be5d7c96b99762050acd669541b9d2bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b637fb5409f7b2b45c62d6006d092508 = $(`<div id="html_b637fb5409f7b2b45c62d6006d092508" style="width: 100.0%; height: 100.0%;">11. Carska Droga (Biebrzański PN) - start</div>`)[0];
+            popup_be5d7c96b99762050acd669541b9d2bc.setContent(html_b637fb5409f7b2b45c62d6006d092508);
+        
+
+        marker_265b48d82bba2bb06a62d6c3a9af3e44.bindPopup(popup_be5d7c96b99762050acd669541b9d2bc)
+        ;
+
+        
+    
+    
+            var marker_a9278ba1038e1a7ccb8b654d39693c3f = L.marker(
+                [53.49, 22.65],
+                {}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            var div_icon_ad45eb3e7176cbe5702e64fb35c4f563 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size:12pt;color:white;background-color:red;border-radius:50%;width:24px;height:24px;text-align:center\"\u003e11\u003c/div\u003e"});
+            marker_a9278ba1038e1a7ccb8b654d39693c3f.setIcon(div_icon_ad45eb3e7176cbe5702e64fb35c4f563);
+        
+    
+        var popup_3caf7f364aa2323f01d298bdb16f8975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61305dd05e93066fc8e9d8f229dd8f94 = $(`<div id="html_61305dd05e93066fc8e9d8f229dd8f94" style="width: 100.0%; height: 100.0%;">11. Carska Droga (Biebrzański PN) - koniec</div>`)[0];
+            popup_3caf7f364aa2323f01d298bdb16f8975.setContent(html_61305dd05e93066fc8e9d8f229dd8f94);
+        
+
+        marker_a9278ba1038e1a7ccb8b654d39693c3f.bindPopup(popup_3caf7f364aa2323f01d298bdb16f8975)
+        ;
+
+        
+    
+    
+            var poly_line_59ec74d531e2e27d2c1fc1995eb4ab81 = L.polyline(
+                [[53.33, 22.58], [53.49, 22.65]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c822d513ab5aa4e677c40eac6b9c03f1);
+        
+    
+            poly_line_59ec74d531e2e27d2c1fc1995eb4ab81.bindTooltip(
+                `<div>
+                     11. Carska Droga (Biebrzański PN)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
